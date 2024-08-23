@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixador de Pacotes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #urlInputs { margin-top: 20px; }
+        .url-input { margin-bottom: 10px; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h1 class="h4 mb-0">Baixador de Pacotes</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="numPackages">Número de Pacotes:</label>
+                        <input type="number" class="form-control" id="numPackages" min="1" placeholder="Número de pacotes" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="generateInputs()">Gerar Inputs</button>
+                </form>
+                
+                <div id="urlInputs" class="mt-4"></div>
+
+                <button type="button" class="btn btn-success mt-3" onclick="downloadPackages()">Baixar Pacotes</button>
+
+                <div id="progress" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="donwloader.js"></script>
+</body>
+</html>
