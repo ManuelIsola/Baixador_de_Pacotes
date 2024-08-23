@@ -21,4 +21,4 @@ O **Package Downloader** é uma aplicação web simples que permite aos usuário
 
 1. **Clonar o Repositório**:
    ```bash
-   git clone https://github.com/usuario/package-downloader.git
+   https://github.com/ManuelIsola/Baixador_de_Pacotes.git
