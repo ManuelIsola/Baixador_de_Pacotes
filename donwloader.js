@@ -41,7 +41,7 @@ function generateInputs() {
                 const a = document.createElement('a');
                 a.style.display = 'none';
                 a.href = downloadUrl;
-                a.download = `${folderName}/${url.split('/').pop()}`; // Sugestão de nome com a extensão
+                a.download = url.split('/').pop();; // Sugestão de nome com a extensão
                 document.body.appendChild(a);
                 a.click();
 
